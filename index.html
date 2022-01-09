@@ -4,9 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <script src="https://kit.fontawesome.com/4ae89fc64a.js" crossorigin="anonymous"></script>
+    <title>John Yoder</title>
 </head>
 <body>
+  <!-- Header/Nav -->
+  <header>
+      <h1>
+        <a href="/">Welcome!</a>
+      </h1>
+      
+      <nav>
+        <ul>
+          <li>
+            <a href="#about-me">About Me</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact-me">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- end navigation --> 
+    
+    <!-- left pane -->
+    <article class="leftPane">
+      <h2>John Yoder</h2>
+      <img src="./assets/images/Avatar1.png" width="200" height="200" alt="A cartonized version of me with a ponytail, and glasses." class="avatar" />
+      
+    <!-- left pane end -->
+
+    <!-- main body -->
+    <section id="about-me">
+      <h2 class="section-title">
+        About Me
+      </h2>
+      <p></p>
+
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">
+        Projects
+      </h2>
+    </section>
+    <!-- main body end-->
+
+    <!-- footer -->
+    <footer>
+      <div id="contact-me">
+        <h3>
+          Contact Me!
+        </h3>
+
+        <form>
+          <label for="name">Your Name</label>
+          <input type="text" placeholder="Name" id="name" name="name" class="form-input" />
+          <label for="email">Your Email</label>
+          <input type="email" placeholder="Email Address" id="email" name="email" class="form-input" />
+          <label for="message">Message</label>
+          <textarea placeholder="Message" name="message" id="message" class="form-input"></textarea>
+          <button type="submit">
+            Submit
+          </button>
+        </form>
+
+      </div>
+    </footer>
+    <!-- footer end -->
     
 </body>
 </html>
