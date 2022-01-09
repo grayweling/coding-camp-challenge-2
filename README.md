@@ -6,7 +6,7 @@ This project was an excercise on creating a portfolio without any starter code, 
 ## John Yoder Portfolio
 <a href="https://grayweling.github.io/coding-camp-challenge-2/">Click Here</a> to go to the website.
 
-![Screenshots](assets/images/capture.JPG)
+![Screenshots](assets/images/Capture.JPG)
 
 ## License
 MIT License
