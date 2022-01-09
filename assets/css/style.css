@@ -153,6 +153,7 @@ a .placeholder-1 {
     font-size: 17px;
     font-style: italic;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    word-wrap: break-word;
 }
 
 .secondary-projects {
@@ -202,7 +203,6 @@ footer {
     justify-content: space-around;
 }
 
-/* contact form styles start */
 .contact-me {
     display: flex;
     justify-content: space-around;
@@ -249,9 +249,7 @@ footer {
     transition: 0.5s;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
-/* contact form styles end */
 
-/* footer avatar styles start */
 .footer-avatar {
     align-items: center;
     display: flex;
@@ -270,12 +268,8 @@ footer {
 
 .footer-avatar img {
     border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 30px;
 }
-/* footer avatar styles end */
-
-/* footer social media styles start */
 
 .socials {
     display: flex;
@@ -299,3 +293,77 @@ footer {
 }
 
 /* End Footer Styles */
+
+@media screen and (max-width: 980px) {
+    .main-body {
+        display: block;
+    }
+
+    .footerSocials ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* media query for tablets and smaller (768px) */
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+    }
+
+    .main-project {
+        display: block;
+    }
+    
+    .secondary-projects {
+        display: block;
+    }
+
+    .main-project p.caption, .secondary-projects p.caption {
+        text-align: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .socials ul {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .footer-avatar {
+        margin: 30px 40px -20px 40px;
+    }
+
+    #contact-me.contact-section {
+        order: -1;
+        margin-bottom: 10px;
+    }
+
+    .contact-section {
+        width: 66%;
+    }
+}
+
+
+/* media query for mobile phones and smaller (575px) */
+@media screen and (max-width: 575px){
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header h1 {
+        justify-content: center;
+        width: 100%;
+    }
+
+    header h1 a {
+        padding: 0;
+    }
+}
