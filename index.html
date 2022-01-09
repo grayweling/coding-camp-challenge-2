@@ -6,75 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css"/>
     <script src="https://kit.fontawesome.com/4ae89fc64a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     <title>John Yoder</title>
 </head>
 <body>
   <!-- Header/Nav -->
   <header>
       <h1>
-        <a href="/">Welcome!</a>
+        <a href="./index.html">Welcome!</a>
       </h1>
-      
-      <nav>
-        <ul>
-          <li>
-            <a href="#about-me">About Me</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact-me">Contact Me</a>
-          </li>
-        </ul>
-      </nav>
+      <h1>John Yoder</h1>
     </header>
-    <!-- end navigation --> 
+    <!-- End Header -->
+    <!-- Nav -->
+    <div class="sidebar">
+      <nav>
+        <a href="./index.html">
+          <img src="./assets/images/Avatar1.png" width="120" height="120" alt="A cartonized version of me with a ponytail, and glasses." class="avatar" />
+        </a>
+        <a href="#about-me">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact-me">Contact Me</a>
+      </nav>
+    </div>
+          <!-- end navigation --> 
     
-    <!-- left pane -->
-    <article class="leftPane">
-      <h2>John Yoder</h2>
-      <img src="./assets/images/Avatar1.png" width="200" height="200" alt="A cartonized version of me with a ponytail, and glasses." class="avatar" />
-      
-    <!-- left pane end -->
-
+  <div class="main body">
     <!-- main body -->
-    <section id="about-me">
-      <h2 class="section-title">
-        About Me
-      </h2>
-      <p></p>
-
-    </section>
-
-    <section id="projects">
-      <h2 class="section-title">
-        Projects
-      </h2>
+    <section class="main-content">
+      <section id="about-me">
+        <h2 class="section-title">
+          About Me
+        </h2>
+        <p>
+          My name is John. I am a Print & Marketing Supervisor at Staples, as well as a student enrolled in a UT Austin Coding Bootcamp.
+          <br/>
+          I am a huge nerd who enjoys spending time with my wife, and playing video games in my free time.
+        </p>
+  
+      </section>
+  
+      <section id="projects">
+        <h2 class="section-title">
+          Projects
+        </h2>
+  
+        <div class="project-cards">
+            <a href="https://grayweling.github.io/run-buddy/" target="_blank">
+                <div class="main-project">
+                        <p class="caption">
+                          Run Buddy
+                          <br/>
+                          HTML/CSS
+                        </p>
+                </div>
+            </a>
+            <div class="secondary-projects">
+                <a href="./index.html" target="_blank">        
+                    <div class="placeholder-1">
+                        <p class="caption">Placeholder Project 1</p>
+                    </div>
+                </a>    
+                <a href="./index.html" target="_blank">
+                    <div class="placeholder-2">
+                        <p class="caption">Placeholder Project 2</p>
+                    </div>
+                </a>    
+            </div>
+      </section>  
     </section>
     <!-- main body end-->
-
+  </div>
     <!-- footer -->
     <footer>
-      <div id="contact-me">
-        <h3>
-          Contact Me!
-        </h3>
+      <div class="socials">
+        <ul>
+            <li>
+                <span style="font-size: 30px;">
+                    <a href="https://www.linkedin.com/in/john-yoder-772465225/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </span>
+            </li>
+            <li>
+                <span style="font-size: 30px;">
+                    <a href="https://github.com/grayweling" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    </span>
+            </li>
+        </ul>
+    </div>
 
-        <form>
-          <label for="name">Your Name</label>
-          <input type="text" placeholder="Name" id="name" name="name" class="form-input" />
-          <label for="email">Your Email</label>
-          <input type="email" placeholder="Email Address" id="email" name="email" class="form-input" />
-          <label for="message">Message</label>
-          <textarea placeholder="Message" name="message" id="message" class="form-input"></textarea>
-          <button type="submit">
-            Submit
-          </button>
+    <article class="footer-avatar">
+        <h2>Thank You for Visiting!</h2>
+        <a href="./index.html"><img src="./assets/images/Avatar1.png" width="200" height="200" class="footerAvatar" alt="A cartonized version of me with a ponytail, and glasses."></a>
+    </article>
+
+    <div id="contact-me" class="contact-section">
+        <h3>Contact Me</h3>
+        <form class="contact-form">
+            <div class="contactFormGrid">
+                <label for="Name">Name</label>
+                <input type="text" id="Name" placeholder="Your name" class="form-input" />
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" class="form-input" />
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" placeholder="Enter a Message" class="form-input"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
         </form>
-
-      </div>
-    </footer>
+    </div>    </footer>
     <!-- footer end -->
     
 </body>
