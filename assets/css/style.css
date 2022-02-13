@@ -134,7 +134,7 @@ header h1 a {
     width: 50%;
 }
 
-a .placeholder-1 {
+a .secondary-project-1 {
     display: inline block;
 }
 
@@ -161,7 +161,7 @@ a .placeholder-1 {
     justify-content: center;
 }
 
-.placeholder-1, .placeholder-2 {
+.secondary-project-1, .placeholder-2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     border-radius: 15px;
@@ -172,15 +172,15 @@ a .placeholder-1 {
     transition: 0.25s;
 }
 
-.placeholder-1 {
-    background-image: url(../images/placeholder1.jpg);
+.secondary-project-1 {
+    background-image: url(../images/nutrigainz-screenshot.JPG);
 }
 
 .placeholder-2 {
     background-image: url(../images/placeholder2.jpg);
 }
 
-.placeholder-1:hover {
+.secondary-project-1:hover {
     opacity: 1;
     transition: 0.5s;
 }
